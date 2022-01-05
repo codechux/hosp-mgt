@@ -1,0 +1,76 @@
+.mug {
+  display: grid;
+  place-items: center;
+  padding: 20px 0;
+}
+
+.mug img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 500%;
+  object-fit: cover;
+  margin: 40px 0;
+}
+
+.mug .dr-details {
+  text-align: center;
+}
+
+p {
+  color: #777;
+}
+
+.gen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.limit {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 5px;
+}
+
+.progress-bar meter {
+  width: 220px;
+}
+
+.progress-bar span {
+  font-size: 8px;
+  color: #777;
+}
+
+.stats {
+  display: flex;
+  padding: 20px;
+  font-size: 10px;
+  text-align: justify;
+  margin-top: 40px;
+}
+
+.stats .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 500%;
+  background-color: #6f4eff;
+}
+
+.stats .stats-card {
+  margin-right: auto;
+}
+
+.stats .dot1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 500%;
+  background-color: #ff9313;
+}
