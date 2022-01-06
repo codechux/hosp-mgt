@@ -5,11 +5,19 @@ import * as FaIcon from 'react-icons/fa'
 import './css/Navbar.css'
 
 
-const Navbar = () => {
+
+
+const Navbar = ({openCreateForm}) => {
+    
     return (
+
+        
         <nav>
+            <div>
+        
+                </div>
             <div className='search'>
-                <FaIcon.FaSearch />
+                <FaIcon.FaBars />
                 <input type="text" placeholder='Search here...' />
             </div>
             <button>
@@ -18,7 +26,7 @@ const Navbar = () => {
             <button>
                 <IoIcon.IoIosNotifications />
             </button>
-            <button>
+            <button onClick={() => openCreateForm(true)}>
                 + New Patient
             </button>
         </nav>

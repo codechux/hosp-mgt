@@ -12,6 +12,9 @@ import PatientsList from '../PatientsList'
 import Profile from '../Profile'
 import { patients } from '../../utility/Patients'
 import CreatePatient from '../CreatePatient'
+import Charts from '../Charts'
+import GetOurApp from '../GetOurApp'
+
 
 
 
@@ -35,7 +38,9 @@ const Dashboard = () => {
     return (
         
         <div className='dashboard'>
-            <Navbar />
+            
+            <Navbar openCreateForm={setCreateFormOpen} />
+          
             <div className='content'>
             <section>
             <Notify  username='Dr Joshi' msg='Unlock the full potential to become' btnLabel='Go Premium'/>
@@ -47,11 +52,17 @@ const Dashboard = () => {
             </div>
 
             <PatientActivity />
-            <PatientsList patientsList={PatientsList}/>
+            <PatientsList patientsList={patientsList}/>
             </section>
 
             <aside>
                 <Profile />
+                <Charts />
+                <section>
+                <div className="get">
+                    <GetOurApp />
+                </div>
+                </section>
             </aside>
             </div>
             {createFormOpen && <CreatePatient createNewPatient={createNewPatient} closeForm={setCreateFormOpen} />}

@@ -1,6 +1,7 @@
 import React from 'react'
 import './css/Patients.css'
 import { getPatientWeight, patients } from '../utility/Patients'
+import Month from './Month'
 
 const Patients = ({ patientsList }) => {
     return (
@@ -9,6 +10,7 @@ const Patients = ({ patientsList }) => {
             <div className='patients-list'>
             <header>
                 <h3>Recent Patients</h3>
+                <Month/>
             </header>
 
             {patientsList?.length > 1 && <table>

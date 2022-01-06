@@ -3,7 +3,7 @@ import './css/Sidebar.css'
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className='nav-menu'>
             
         </div>
     )
